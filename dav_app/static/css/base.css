@@ -1,0 +1,12 @@
+body{
+	background: #f3f3f3;
+	padding: 10px;
+}
+
+.img-look{
+	height: 350px;
+}
+
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }

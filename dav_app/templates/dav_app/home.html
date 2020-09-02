@@ -1,0 +1,90 @@
+{% extends 'dav_app/base.html' %}
+{% load static %}
+
+{% block title %} 
+	Vikas Vidyaniketan
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="row row-cols-1 row-cols-md-4">
+  <div class="col mb-4">
+    <div class="card bg-info h-100">
+      <div class="card-body">
+      	<a href="{% url 'study' %}" class="text-white" style="text-decoration: none;">
+        <h5 class="card-title text-center">Study Material <i class="fas fa-book"></i></h5>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card bg-danger h-100">
+      <div class="card-body">
+        <a href="{% url 'class' %}" class="text-white" style="text-decoration: none;">
+        <h5 class="card-title text-center">Online Classes <i class="fas fa-school"></i></h5>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card bg-warning h-100">
+      <div class="card-body">
+        <a href="{% url 'test' %}" class="text-white" style="text-decoration: none;">
+        <h5 class="card-title text-center">Online Test <i class="fas fa-pencil-ruler"></i></h5>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card bg-success h-100">
+      <div class="card-body">
+        <a href="{% url 'payment' %}" class="text-white" style="text-decoration: none;">
+        <h5 class="card-title text-center">Fee Payment <i class="fab fa-cc-visa"></i></h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+		<div class="card">
+  		<img src="{% static 'img/vikas.jpg' %}" class="card-img-top" style="height: 600px;">
+  		<div class="card-body">
+    	<p class="card-text">WELCOME TO VIKAS VIDYANIKETAN, a premier world class institution at Vishakhapatnam affiliated to CBSE, New Delhi. The exclusive fully equipped Boarding School at Visakhapatnam is the largest residential School in South India. The State of the Art boarding campuses for boys and girls and the serene environment with well designed modern in-house amenities , makes life at Vikas Vidyaniketan a truly stimulating and rewarding experience. The Blend of the best faculty, a dynamic management and the dedicated staff highly committed to education has given a new definition to the foundation of the education ecosystem.</p>
+  		</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="card">
+		<img src="{% static 'img/exams.jpg' %}" style="height: 855px;">
+		</div>
+	</div>
+</div>
+<br>
+<div class="card bg-secondary">
+	<div class="card-body">
+		<h4 class="card-text text-white text-center">25000+ Students | 230+ Batches</h3>
+			<p class="card-text text-center text-white">Find us on:<br>
+				<a href="https://www.instagram.com/a.n.i.k.e.t_r.a.j/" class="text-white">
+					<span style="font-size: 25px;"><i class="fab fa-instagram cart_icon"></i></span>
+				</a> &nbsp;
+				<a href="https://www.facebook.com/ar.raj.13/" class="text-white">
+					<span style="font-size: 25px;"><i class="fab fa-facebook cart_icon"></i></span>
+				</a> &nbsp;
+				<a href="https://twitter.com/Aniket_Raj13" class="text-white">
+					<span style="font-size: 25px;"><i class="fab fa-twitter-square cart_icon"></i></span>
+				</a> &nbsp;
+				<a href="https://github.com/Aniket1317/" class="text-white">
+					<span style="font-size: 25px;"><i class="fab fa-github"></i></span>
+				</a>
+			</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

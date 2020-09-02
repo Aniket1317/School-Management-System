@@ -1,0 +1,38 @@
+{% extends 'dav_app/base.html' %}
+{% load static %}
+
+{% block title %} 
+	Online Classes
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+	<br>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Class</th>
+				<th>Date</th>
+				<th>Day</th>
+				<th>Time</th>
+				<th>Teacher Name</th>
+				<th>Subject</th>
+				<th>Link</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for class in classes %}
+			<tr>
+				<td>{{ class.std }}</td>
+				<td>{{ class.c_date|date:'d M Y' }}</td>
+				<td>{{ class.c_day }}</td>
+				<td>{{ class.cs_time }}-{{ class.ce_time }}</td>
+				<td>{{ class.teacher_name}}</td>
+				<td>{{ class.sub}}</td>
+				<td><a href="#">{{ class.c_link }}</a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock %}

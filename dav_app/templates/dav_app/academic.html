@@ -1,0 +1,89 @@
+{% extends 'dav_app/base.html' %}
+{% load static %}
+
+{% block title %} 
+	Vikas-academic
+{% endblock %}
+
+{% block content %}
+<div class="row">
+<div class="col-sm-6">
+	<h3 class="text-center">Fee Structure</h3>
+	<table class="table table-stripped">
+		<thead>
+			<tr>
+				<th>S.No.</th>
+				<th>Particulars</th>
+				<th>Period</th>
+				<th>Amt. (Rs.)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>1</b></td>
+				<td>Registration Fee<br>Admission Fee</td>
+				<td>For new admn.<br>For new admn.</td>
+				<td>500<br>7000</td>
+			</tr>
+			<tr>
+				<td><b>2</b></td>
+				<td><b>Tuition Fee</b><br>PRE NUR to U.K.G.<br>Std. I to IV<br>Std. V<br>Std. VI & VII<br>Std. VIII<br>Std. IX & X<br>Std. XI & XII Sc without Comp<br>Std. XI & XII Sc with Comp<br>Std. XI & XII Commerce</td>
+				<td><br>Per Month<br>Per Month<br>Per Month<br>Per Month<br>Per Month<br>Per Month<br>Per Month<br>Per Month<br>Per Month</td>
+				<td><br>1000<br>1570<br>1640<br>1720<br>1870<br>2100<br>2840<br>3020<br>2670</td>
+			</tr>
+			<tr>
+				<td><b>3</b></td>
+				<td><b>Annual Charge</b></td>
+				<td>Per Annum</td>
+				<td>3500</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="col-sm-6">
+	<h3 class="text-center">Holiday List</h3>
+	<table class="table table-stripped">
+		<thead>
+			<tr>
+				<th>Event</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="table-primary">
+				<td>Ramnavami</td>
+				<td>02-Apr-2020</td>
+			</tr>
+			<tr class="table-secondary">
+				<td>Good Friday</td>
+				<td>10-Apr-2020</td>
+			</tr>
+			<tr class="table-success">
+				<td>Ramzan Id</td>
+				<td>25-May-2020</td>
+			</tr>
+			<tr class="table-danger">
+				<td>Rath Yatra</td>
+				<td>23-Jun-2020</td>
+			</tr>
+			<tr class="table-warning">
+				<td>Raksha Bandhan</td>
+				<td>03-Aug-2020</td>
+			</tr>
+			<tr class="table-info">
+				<td>Janmashtami</td>
+				<td>11-Aug-2020</td>
+			</tr>
+			<tr class="table-dark">
+				<td>Navratri</td>
+				<td>21-25-Oct-2020</td>
+			</tr>
+			<tr class="table-success">
+				<td>Diwali</td>
+				<td>13-22-Nov-2020</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div>
+{% endblock %}

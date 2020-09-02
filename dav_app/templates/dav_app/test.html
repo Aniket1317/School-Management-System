@@ -1,0 +1,36 @@
+{% extends 'dav_app/base.html' %}
+{% load static %}
+
+{% block title %} 
+	Online Test
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+	<br>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Class</th>
+				<th>Date</th>
+				<th>Day</th>
+				<th>Time</th>
+				<th>Subject</th>
+				<th>Link</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for test in tests %}
+			<tr>
+				<td>{{ test.std }}</td>
+				<td>{{ test.t_date|date:'d M Y' }}</td>
+				<td>{{ test.t_day }}</td>
+				<td>{{ test.ts_time }}-{{ test.te_time }}</td>
+				<td>{{ test.sub}}</td>
+				<td><a href="#">{{ test.t_link }}</a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock %}

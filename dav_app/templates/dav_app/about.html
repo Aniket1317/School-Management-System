@@ -1,0 +1,87 @@
+{% extends 'dav_app/base.html' %}
+{% load static %}
+
+{% block title %} 
+	Vikas-about
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="card mb-4" style="background: #ede9c0;">
+  	<div class="row no-gutters">
+    <div class="col-md-3">
+      <img src="{% static 'img/principal.jpg' %}" height="300" style="width: 250px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Principal's Message</h5>
+        <p class="card-text">The Vikas Vidyaniketan Schools provide a congenial environment for all round development of the personality and its integration with the society, particularly with reference to the Indian Context. Positive ideas are inculcated in students as regards personal hygiene, neatness of uniform, cleanness of the surroundings, graceful manners, obedience and discipline.To achieve high academic standards, personal attention is given to each individual child. A highly motivated and dedicated team of teachers play the role model for the children. Individual care and personalized coaching and regular effort have created a very vibrant and inspiring environment. Learning is a joy here as teachers make their lessons very interesting by following various methods of teaching viz Demonstration, Experimentation, Project work, Home assignments, Play-way, Micro-teaching, Structure method etc.</p>
+      </div>
+    </div>
+  	</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<table class="table table-striped">
+	<tbody>
+		<tr>
+			<td>Name of School</td>
+			<td>Vikas Vidyaniketan</td>
+		</tr>
+		<tr>
+			<td>Address of School</td>
+			<td>Anakapalle Bypass, 1-1-1/1,<br> NH16, Sheela Nagar, Visakhapatnam, <br>
+			Andhra Pradesh 530012</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>pr@vikasonline.com</td>
+		</tr>
+		<tr>
+			<td>Contact</td>
+			<td>98480 11303, 98480 25545</td>
+		</tr>
+		<tr>
+			<td>Status Of Affilation</td>
+			<td>Affiliated up to Sr. Secondary (+2) level</td>
+		</tr>
+		<tr>
+			<td>Affilation No.</td>
+			<td>3430219</td>
+		</tr>
+		<tr>
+			<td>Year of establishment of the school</td>
+			<td>1996</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div class="col-sm-6">
+	<div class="card bg-light">
+		<div class="card-header p-0">
+			<div class="bg-dark text-white text-center py-2">
+				<h4 class="text-uppercase">contact</h4>
+			</div>
+		</div><br>
+		<form>
+			<div class="form-group pl-2 pr-2">
+				<input type="text" name="name" placeholder="Name" class="form-control">
+			</div>
+			<div class="form-group pl-2 pr-2">
+				<input type="text" name="phone" placeholder="Phone No." class="form-control" maxlength="10">
+			</div>
+			<div class="form-group pl-2 pr-2">
+				<input type="email" name="email" placeholder="Email" class="form-control">
+			</div>	
+			<div class="form-group pl-2 pr-2">
+				<textarea placeholder="Message" class="form-control" rows="3"></textarea>
+			</div>
+			<button type="submit" name="button" class="btn btn-info btn-block rounded-0 py-2 mt-3">Submit
+			</button>		
+		</form>
+	</div>
+</div>
+</div>
+<br>
+
+{% endblock %}
